@@ -7,13 +7,19 @@ import Formaal from "../components/Formaal.astro";
 
 <MainLayout title="Digital Ansøgning" />
 <main>
-  <video
-    src="/video/kornmark.mp4"
-    autoplay
-    loop
-    muted
-    playsinline
-    class="w-full max-w-xl mx-auto rounded-lg"></video>
+  <section class="relative">
+    <div class="sticky top-0 z-10 bg-primary">
+      <video
+        src="/video/kornmark.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+        class="w-full max-w-xl mx-auto rounded-lg"></video>
+    </div>
+    <!-- giver plads til at videoen kan være sticky -->
+    <div class="h-[50vh]"></div>
+  </section>
 
   <Malou />
   <Formaal />
