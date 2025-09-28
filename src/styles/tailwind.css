@@ -51,3 +51,7 @@
     border-color: var(--color-accent);
   } /* beige */
 }
+
+html {
+  scroll-behavior: smooth;
+}
