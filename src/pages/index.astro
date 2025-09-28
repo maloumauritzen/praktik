@@ -1,5 +1,20 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Malou from "../components/Malou.astro";
+import Formaal from "../components/Formaal.astro";
 ---
 
-<MainLayout title="Titel" />
+<MainLayout title="Digital Ansøgning" />
+<main>
+  <video
+    src="/video/kornmark.mp4"
+    autoplay
+    loop
+    muted
+    playsinline
+    class="w-full max-w-xl mx-auto rounded-lg"></video>
+
+  <Malou />
+  <Formaal />
+</main>
