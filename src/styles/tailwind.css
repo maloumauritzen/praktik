@@ -6,22 +6,48 @@
 @import "tailwindcss-intersect";
 
 @theme {
-  /* Her tilføjes theme variable // tokens */
+
+    /* Farver */
+  --color-primary: #E3E0D9; /* beige */
+  --color-secondary: #413C36; /* brown-ish */
+
+  /* Typografi */
+  --font-sans: 'Europa', sans-serif;
+  --font-serif: 'Didot LT Pro', serif;  
 }
 
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
+  /* Standard baggrundsfarve */
+  body {
+    @apply bg-primary text-secondary font-sans;
   }
 }
 
-@layer components{
+@layer utilities {
+  /* Tekstfarver */
+  .text-primary {
+    color: var(--color-secondary);
+  } /* sort */
+  .text-secondary {
+    color: var(--color-primary);
+  }
 
-}
-@layer utilities{
-  
+  /* Baggrundsfarver */
+  .bg-primary {
+    background-color: var(--color-primary);
+  } /* sort */
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  } /* hvid */
+  .bg-accent {
+    background-color: var(--color-accent);
+  } /* beige */
+
+  /* Borders */
+  .border-primary {
+    border-color: var(--color-primary);
+  } /* sort */
+  .border-accent {
+    border-color: var(--color-accent);
+  } /* beige */
 }
