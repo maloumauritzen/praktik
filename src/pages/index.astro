@@ -1,6 +1,5 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Header from "../components/Header.astro";
 import Malou from "../components/Malou.astro";
 import Formaal from "../components/Formaal.astro";
 import Kompetencer from "../components/Kompetencer.astro";
@@ -8,8 +7,8 @@ import Erfaring from "../components/Erfaring.astro";
 import Kontakt from "../components/Kontakt.astro";
 ---
 
-<MainLayout title="Digital Ansøgning" />
-<main>
+<MainLayout title="Digital Ansøgning">
+  <!-- Hero / Video-sektion -->
   <section class="relative">
     <div class="sticky top-0 z-10 bg-primary">
       <video
@@ -18,15 +17,18 @@ import Kontakt from "../components/Kontakt.astro";
         loop
         muted
         playsinline
-        class="w-full max-w-xl mx-auto"></video>
+        class="w-full max-w-xl mx-auto"
+      >
+      </video>
     </div>
-    <!-- giver plads til at videoen kan være sticky -->
+    <!-- Plads til at videoen kan være sticky -->
     <div class="h-[25vh]"></div>
   </section>
 
+  <!-- Sideindhold -->
   <Malou />
   <Formaal />
   <Kompetencer />
   <Erfaring />
   <Kontakt />
-</main>
+</MainLayout>
