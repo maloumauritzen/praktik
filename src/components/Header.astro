@@ -1,10 +1,10 @@
-<section class="bg-primary grid grid-cols-2 md:h-screen">
+<section class="bg-primary grid grid-cols-2">
   <!-- Venstre kolonne -->
   <div>
-    <h1 class="leading-none ml-4">M</h1>
+    <h1 class="leading-none ml-8 pt-3 lg:ml-25 lg:mt-25 lg:h-100">M</h1>
 
-    <div class="max-w-4/5 ml-4">
-      <ul class="text-[12px]">
+    <div class="max-w-4/5 ml-4 lg:ml-12 lg:max-w-3/6 lg:mt-15">
+      <ul class="text-[12px] lg:text-[16px]">
         <li
           class="flex justify-between items-center border-b border-secondary py-2"
         >
@@ -51,21 +51,48 @@
 
   <!-- Højre kolonne -->
   <div
-    class="relative flex items-center justify-center w-full h-87 bg-secondary"
+    class="relative flex items-center justify-center w-full h-87 bg-secondary lg:h-207"
   >
-    <img
-      src="/img/Ring.jpg"
-      alt="Hånd med ring"
-      class="w-4/5 max-w-[500px] h-auto"
-    />
+    <div class="lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:gap-x-4 lg:gap-y-4">
+      <img
+        src="/img/Moon.jpg"
+        alt="Himmel med måne"
+        class="hidden lg:block lg:w-auto lg:h-60"
+      />
+      <img
+        src="/img/Klitter.jpg"
+        alt="Havet og klitter"
+        class="hidden lg:block lg:w-auto lg:h-60"
+      />
+      <img
+        src="/img/Ring.jpg"
+        alt="Hånd med ring"
+        class="w-4/5 max-w-[500px] h-auto mx-auto lg:w-auto lg:h-60"
+      />
+      <img
+        src="/img/Bukser.jpg"
+        alt="Iført blondebukser"
+        class="hidden lg:block lg:w-auto lg:h-60"
+      />
+      <img
+        src="/img/Havet.jpg"
+        alt="Havet"
+        class="hidden lg:block lg:w-auto lg:h-60"
+      />
+      <img
+        src="/img/Ski.jpg"
+        alt="Skiferie"
+        class="hidden lg:block lg:w-auto lg:h-60"
+      />
+    </div>
 
     <p
-      class="absolute top-4 text-secondary text-[8px] text-center font-normal md:text-5xl"
+      class="absolute top-3 text-secondary text-[8px] text-center font-normal md:text-[12px]"
     >
       MALOU MAURITZEN
     </p>
     <hr
-      class="absolute left-1/2 top-7 -translate-x-1/2 w-18 h-0.5 bg-primary"
+      class="absolute left-1/2 top-7 -translate-x-1/2 w-18 h-0.5 bg-primary lg:w-27 lg:top-8"
     />
   </div>
 </section>

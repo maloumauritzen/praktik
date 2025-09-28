@@ -32,8 +32,26 @@
     font-weight: 300;
     color: --color-secondary;
     font-style: italic;
-    
   }
+
+  p{
+    font-family: 'Europa', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-secondary);
+    font-weight: 400;
+  }
+
+   @media (min-width: 1028px){
+    h1{
+      font-size: 500px;
+    }
+
+    p{
+      font-size: 16px;
+      line-height: 20px;
+    }
+   }
 
 }
 
