@@ -21,7 +21,23 @@
   body {
     @apply bg-primary text-secondary font-sans;
   }
+
+  html {
+  /* scroll-behavior: smooth; */
 }
+
+  h1 {
+    font-family: Didot LT Pro, serif;
+    font-size: 150px;
+    font-weight: 300;
+    color: --color-secondary;
+    font-style: italic;
+    
+  }
+
+}
+
+
 
 @layer utilities {
   /* Tekstfarver */
@@ -35,23 +51,16 @@
   /* Baggrundsfarver */
   .bg-primary {
     background-color: var(--color-primary);
-  } /* sort */
+  } /* beige */
   .bg-secondary {
     background-color: var(--color-secondary);
-  } /* hvid */
-  .bg-accent {
-    background-color: var(--color-accent);
-  } /* beige */
+  } /* brown-ish */
+
 
   /* Borders */
   .border-primary {
-    border-color: var(--color-primary);
-  } /* sort */
-  .border-accent {
-    border-color: var(--color-accent);
-  } /* beige */
+    border-color: var(--color-secondary);
+  } /* brown-ish */
+
 }
 
-html {
-  scroll-behavior: smooth;
-}
